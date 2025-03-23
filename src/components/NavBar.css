@@ -1,0 +1,135 @@
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inner-left-nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .list {
+        display: block;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .inner-right-nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .search {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .search-button {
+        width: 50%;
+        padding: 8px;
+    }
+}
+
+/* Mobile view (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .nav-container {
+        padding: 10px;
+    }
+
+    .left-nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .list {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .inner-right-nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search {
+        width: 90%;
+        padding: 6px;
+        color:black
+    }
+
+    .search-button {
+        width: 60%;
+        padding: 6px;
+    }
+}.nav-container{
+    margin-top: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(245, 147, 0) ;
+    color:rgb(89, 42, 11);
+    font-family: 'Poppins', sans-serif;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap:10px;
+}
+.inner-left-nav{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.inner-left-nav img{
+    height: auto;
+    width: 50px;
+    border-radius: 50%;
+}
+.list{
+    text-decoration: none;
+    color: rgb(89, 42, 11);
+    margin:10px;
+    border-radius: 10px;
+    padding:10px;
+}
+.list:hover{
+    background-color: rgb(194, 90, 0);
+}
+.inner-right-nav{
+    display:flex;
+    justify-content: space-evenly;
+    gap:5px;
+}
+.search{
+    padding: 5px;
+    border: none;
+    outline: none;
+    color:white;
+    background-color:lightgray ;
+}
+.search:focus{
+    background-color: lightgray;
+}
+.search-button{
+    padding:5px;
+    color: rgb(89, 42, 11);
+    border:none;
+    color:rgb(237, 185, 111);
+    box-shadow:2px 2px 10px rgb(89, 42, 11);
+}
+input[type="search"]{
+    color: black;
+}
